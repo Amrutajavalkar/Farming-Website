@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        form
+        {
+            border:1px solid;
+            padding:5px;
+            height:300px;
+            width:200px;
+            align-items: center;
+        }
+        body
+        {
+           text-align: center;
+           background-image: url('login.jpg');
+        }
+        header
+              {
+                background-color: rgb(243, 173, 81);
+                color:rgb(1, 1, 1);
+                padding: 20px;
+                position:sticky;
+                top:0;
+              }
+              nav
+              {
+                display:flex;
+                list-style:none;
+              }
+              a
+       {
+        margin-right:130px;
+        border-radius: 25px;
+        border:2px solid rgb(47, 36, 57);
+        padding:3px;
+        width: 200px;
+        text-decoration: none;
+       }
+    </style>
+    <script>
+        function LoginForm() {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const cpassword = document.getElementById("cpassword").value.trim();
+            const passwordRegex=/^[0-9]{6}$/;
+            const cpasswordRegex=passwordRegex;
+            const nameRegex = /^[A-Za-z\s]+$/;
+
+
+            if (!nameRegex.test(name)) {
+                alert("Name should contain alphabets only.");
+                return false;
+            }
+            if(!passwordRegex.test(password))
+            {
+                alert("Enter 6 digits password");
+                return false;
+            }
+            if(!cpasswordRegex.test(cpassword))
+            {
+                alert("password and confirm password is not same");
+                return false;
+            }
+            alert("Login successful!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>    
+        <h1><marquee>Agricultural Service</marquee></h1>
+        <div id="Navbar">
+            <nav>
+            <a href="web.html"><b>Home</a></b>                
+            <a href="seeds.html"><b>Seeds</a></b>                   
+            <a href="login.html"><b>Login</a></b>             
+            <a href="fertilizers.html"><b>Fertilizers</a></b>        
+            <a href="equipments.html"><b>Equipment</a></b>             
+            <input placeholder="search agri.in">                           
+            <button>search</button>                         
+            </nav> 
+        </div>
+        </header>
+    <h1>Login Form</h1>
+ <center><form onsubmit="return LoginForm();">
+    
+      <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        <label for="cpassword">Confirm Password:</label>
+        <input type="cpassword" id="cpassword" name="cpassword" placeholder="Enter your confirm password" required><br><br>
+        <button type="submit">Login</button></center>
+    </form>
+</body>
+</html>

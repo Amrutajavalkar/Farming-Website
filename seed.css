@@ -1,0 +1,21 @@
+#Navbar
+{
+    height:40px;
+    background-color:rgb(237, 17, 149);
+    font-size:20px;
+    text-align:center;
+}
+a
+{
+    margin-right:130px;
+}
+button{
+    background-color: rgb(62, 62, 228);
+    text-align:center;
+    color: aliceblue;
+
+}
+#seedki
+{
+    border-radius: 10px;
+}

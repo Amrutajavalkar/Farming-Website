@@ -1,0 +1,58 @@
+body
+{
+  background-image:url("thirdweb.jpg") ;
+  background-size:cover;
+}
+#Navbar
+{
+    height:40px;    
+    background-color:rgb(237, 17, 149);
+    font-size:20px;
+    text-align:center;
+}
+a
+{
+    margin-right:130px;
+    border-radius: 25px;
+    border:2px solid rgb(47, 36, 57);
+    padding:4px;
+    width: 200px;
+    text-decoration: none;
+}
+h1
+{
+    font:300px;
+   text-align:center;
+}
+button{
+    background-color: rgb(46, 173, 241);
+    text-align:center;
+    color: aliceblue;
+}
+#but
+{
+    background-color: rgb(5, 33, 5);
+    color: aliceblue;
+}
+footer
+{
+    background-color: rgb(6, 6, 6);
+    color:white;
+    border:2px solid rgb(241, 143, 143);
+    z-index: 0;
+    margin: 450px;
+    min-height:400px;
+}
+
+#cont
+{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Yuji Mai" ,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+footer p
+{
+    text-align: center;
+}
